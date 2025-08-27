@@ -60,11 +60,12 @@ html,body{
     box-shadow: 0 0 20px #ffffff;
 }
 
-
-
 #SEARCH button{
     background-color: rgb(255, 255, 255);
+    border: none;
 }
+
+
 
 .div2 {
     grid-row: span 6 / span 6;
