@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def main_page():
-        return "hello"
+        return render_template("main_page/index.html")
 
 if __name__ == "__main__":
-        pass
+        app.run(debug=True)
