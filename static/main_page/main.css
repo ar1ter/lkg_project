@@ -18,11 +18,22 @@ html,body{
 }
 
 
-    
 .div1 {
     grid-column: span 7 / span 7;
     background-color: rgba(22, 16, 46, 0.6);
     border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#OPEN_TUBE_logo{
+    margin-right: auto;
+}
+#OPEN_TUBE_logo h1{
+    margin: 0;
+    color: white;
 }
 
 .div2 {
