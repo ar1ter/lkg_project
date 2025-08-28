@@ -15,13 +15,17 @@
                     <button>Search</button>
                 </div>
             </div>
-            <div class="left_panel">
 
-            </div>
+            <div class="left_panel"></div>
+
             <div class="video_panel">
-                 <div class="video_container">
-                    <video id="Video_1" src="/static/uploads/video_2.mp4" controls>
-                    </video>
+                <div class="video_grid">
+                    {% for video in video_paths %}
+                        {% set filename = video.split('/')[-1] %}
+                        <a href="{{ url_for('video_player') }}?file={{ filename }}" class="video_tile">
+                            <video src="{{ video }}" muted></video>
+                        </a>
+                    {% endfor %}
                 </div>
             </div>
         </div>
