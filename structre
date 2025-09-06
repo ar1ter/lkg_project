@@ -1,0 +1,11 @@
+Project/
+|-static/
+|--images/
+|--video/
+|-templates/
+|--main_page/
+|---index.html
+|---style.css
+|---script.js
+|-app.py
+ok???
